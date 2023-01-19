@@ -3,22 +3,32 @@
 <html>
   <head>
     <title>Epic Repository Website</title>
+    <style>
+      body {
+        background-color: black;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Welcome to the 7 seas!</h1>
-    <p>This is my EPIC repo!</p>
-    <p>add this to cydia:</p> <a href="https://aavvironalex.github.io/AlexVsCydiaRepo/"> https://aavvironalex.github.io/AlexVsCydiaRepo/</a> 
+    <h1 id="heading">Welcome to the 7 seas!</h1>
+    <p id="heading">This is my EPIC repo!</p>
+    <p id="heading">Add this to cydia:</p> 
+    <a id="heading" href="https://aavvironalex.github.io/AlexVsCydiaRepo/"> https://aavvironalex.github.io/AlexVsCydiaRepo/</a> 
+    <p id="heading">Check out my website.</p>
+    <a id="heading" href="https://EarthMapsPictures.weebly.com/"> EarthMapsPictures Website</a> 
 
     <script>
-      // array of background colors
+      // array of text colors
       var colors = ["red", "green", "blue", "purple", "orange"];
       var index = 0;
 
-      // change background color every 3 seconds
+      // change text color every 3 seconds
       setInterval(function() {
-        document.body.style.backgroundColor = colors[index];
+        var heading = document.getElementById("heading");
+        heading.style.color = colors[index];
         index = (index + 1) % colors.length;
-      }, 3);
+      }, 3000);
     </script>
   </body>
 </html>
