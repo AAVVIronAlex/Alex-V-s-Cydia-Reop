@@ -1,8 +1,24 @@
 <!DOCTYPE html>
+
 <html>
-<body>
-<h1>Welcome to the 7 seas!</h1>
-<p>This is my EPIC repo!</p>
-<p>add this to cydia:</p> <a href="https://aavvironalex.github.io/AlexVsCydiaRepo/"> https://aavvironalex.github.io/AlexVsCydiaRepo/</a> 
-</body>
+  <head>
+    <title>Epic Repository Website</title>
+  </head>
+  <body>
+    <h1>Welcome to the 7 seas!</h1>
+    <p>This is my EPIC repo!</p>
+    <p>add this to cydia:</p> <a href="https://aavvironalex.github.io/AlexVsCydiaRepo/"> https://aavvironalex.github.io/AlexVsCydiaRepo/</a> 
+
+    <script>
+      // array of background colors
+      var colors = ["red", "green", "blue", "purple", "orange"];
+      var index = 0;
+
+      // change background color every 3 seconds
+      setInterval(function() {
+        document.body.style.backgroundColor = colors[index];
+        index = (index + 1) % colors.length;
+      }, 3);
+    </script>
+  </body>
 </html>
