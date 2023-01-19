@@ -1,0 +1,10 @@
+Package: com.c3fff0e.spotifyxploitpremium
+Name: Spotify xPloit: Premium
+Depends: mobilesubstrate
+Version: 1.0k
+Architecture: iphoneos-arm
+Description: Premium Features [Works on v2.0.0 - v2.5.0] (No Configurations)
+Maintainer: C3FFF0E
+Author: Vincent Lim
+Section: Tweaks
+Homepage: http://iosgods.com
