@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <title>Epic Repository Website</title>
@@ -9,14 +8,13 @@
       }
     </style>
   </head>
-
   <body>
     <h1 id="heading">Welcome to the 7 seas!</h1>
-    <p id="heading">This is my EPIC repo!</p>
-    <p id="heading">Add this to cydia:</p> 
-    <a id="heading" href="https://aavvironalex.github.io/AlexVsCydiaRepo/"> https://aavvironalex.github.io/AlexVsCydiaRepo/</a> 
-    <p id="heading">Check out my website.</p>
-    <a id="heading" href="https://EarthMapsPictures.weebly.com/"> EarthMapsPictures Website</a> 
+    <p style="color:Yellow;">This is my EPIC repo!</p>
+    <p style="color:yellow;">Add this to cydia:</p> 
+    <a id="paragraph" href="https://aavvironalex.github.io/AlexVsCydiaRepo/"> https://aavvironalex.github.io/AlexVsCydiaRepo/</a> 
+    <p style="color:yellow;">Check out my website.</p>
+    <a id="paragraph" href="https://EarthMapsPictures.weebly.com/"> EarthMapsPictures Website</a> 
 
     <script>
       // array of text colors
@@ -26,9 +24,17 @@
       // change text color every 3 seconds
       setInterval(function() {
         var heading = document.getElementById("heading");
+        var paragraphs = document.getElementsByClassName("paragraph");
+        var links = document.getElementsByTagName("a");
         heading.style.color = colors[index];
+        for (var i = 0; i < paragraphs.length; i++) {
+            paragraphs[i].style.color = colors[index];
+        }
+        for (var i = 0; i < links.length; i++) {
+            links[i].style.color = colors[index];
+        }
         index = (index + 1) % colors.length;
-      }, 3000);
+      }, 500);
     </script>
   </body>
 </html>
